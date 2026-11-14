@@ -6,3 +6,5 @@ __pycache__/
 .DS_Store
 # links locais para .agents/skills (o Claude Code lê .claude/skills)
 .claude/skills/
+# tabela por usuário: dado, não resultado (o parquet fica em dados/processados/)
+saidas/tabela_master.csv

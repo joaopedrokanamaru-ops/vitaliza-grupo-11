@@ -1,0 +1,8 @@
+﻿sistema,grupo,assinantes,saiu_jun_jul,saiu_mai_ago,% saiu jun-jul,% saiu mai-ago
+android,a. teve falha de GPS,1572,395,570,25.127226463104325,36.25954198473282
+android,"b. treinou ao ar livre no app, sem falha",831,152,251,18.29121540312876,30.20457280385078
+android,"c. treinava ao ar livre antes, não na janela",482,94,331,19.502074688796682,68.67219917012449
+android,d. não treina ao ar livre pelo app,275,44,131,16.0,47.63636363636364
+ios,"b. treinou ao ar livre no app, sem falha",2420,333,596,13.760330578512397,24.628099173553718
+ios,"c. treinava ao ar livre antes, não na janela",421,59,294,14.014251781472684,69.83372921615202
+ios,d. não treina ao ar livre pelo app,148,23,80,15.54054054054054,54.054054054054056

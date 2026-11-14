@@ -1,0 +1,81 @@
+﻿coluna,grupo,descricao,fonte,tipo,preenchidas,% preenchido,% preenchido (ativos)
+user_id,identificação,Chave da conta,usuarios,object,63929,100.0,100.0
+situacao,identificação,"Situação no corte: assinante ativo, ex-assinante, em teste grátis, teste expirou sem assinar, nunca iniciou teste",assinaturas + trials,object,63929,100.0,100.0
+data_referencia,identificação,Data em que uso e comportamento foram medidos: 30/09/2026 para ativos e para quem nunca assinou; véspera da saída para ex-assinantes,derivada,datetime64[ns],63929,100.0,100.0
+sexo,perfil,"F, M ou não informado",usuarios,object,63929,100.0,100.0
+ano_nascimento,perfil,Ano de nascimento (vazio se não informado ou inválido),usuarios,Int64,60095,94.0,93.9
+idade_no_corte,perfil,Idade em 30/09/2026,usuarios,Int64,60095,94.0,93.9
+faixa_idade,perfil,"até 24, 25-34, 35-44, 45-54, 55+, não informado",usuarios,object,63929,100.0,100.0
+cidade,perfil,Cidade padronizada,usuarios,object,63929,100.0,100.0
+uf,perfil,Estado,usuarios,object,63929,100.0,100.0
+sistema,perfil,"android ou ios. Situação na exportação, sem data",usuarios,object,63929,100.0,100.0
+data_cadastro,entrada,Data de cadastro (horário de Brasília),usuarios,datetime64[ns],63929,100.0,100.0
+cadastro_antes_do_log,entrada,Cadastro antes de 07/2024: nessas coortes quase só há contas que assinaram,usuarios,bool,63929,100.0,100.0
+canal_aquisicao,entrada,Canal por onde a conta chegou,usuarios,object,63929,100.0,100.0
+influenciador,entrada,"Influenciador citado no onboarding, quando houver",onboarding,object,7793,12.2,9.3
+fez_trial,entrada,Iniciou teste grátis (o log começa em 07/2024),trials,bool,63929,100.0,100.0
+data_trial,entrada,Data de início do teste grátis,trials,datetime64[ns],46996,73.5,90.1
+desfecho_trial,entrada,"converteu, expirou ou em_andamento",trials,object,46996,73.5,90.1
+ja_assinou,entrada,Tem assinatura (cada conta tem no máximo uma),assinaturas,bool,63929,100.0,100.0
+data_inicio_assinatura,entrada,Início da assinatura,assinaturas,datetime64[ns],32583,51.0,100.0
+assinatura_antes_do_log,entrada,Assinatura iniciada antes de 07/2024 (só aparecem as que ainda existiam nessa data),assinaturas,boolean,32583,51.0,100.0
+plano,entrada,mensal ou anual,assinaturas,object,32583,51.0,100.0
+canal_cobranca,entrada,"app_store, google_play, web_cartao ou web_pix",assinaturas,object,32583,51.0,100.0
+entrou_com_cupom,entrada,Primeira cobrança com cupom,pagamentos,boolean,32583,51.0,100.0
+ativa_no_corte,saída,Assinatura ativa em 30/09/2026,assinaturas,bool,63929,100.0,100.0
+data_fim,saída,Fim da assinatura (vazio se ativa ou se nunca assinou),assinaturas,datetime64[ns],17830,27.9,0.0
+motivo_fim,saída,"renovacao_desligada, falha_pagamento, chargeback ou reembolso",assinaturas,object,17830,27.9,0.0
+tipo_saida,saída,"voluntária (renovação desligada, reembolso) ou involuntária (falha de pagamento, chargeback)",derivada,object,17830,27.9,0.0
+duracao_dias,saída,Dias de assinatura até a saída ou até o corte,assinaturas,Int64,32583,51.0,100.0
+meses_de_casa,saída,duracao_dias em meses,derivada,float64,32583,51.0,100.0
+renovacao_desligada,saída,Ativos: renovação automática desligada no corte. Ex-assinantes: saíram por renovação desligada,assinaturas,boolean,32583,51.0,100.0
+data_desligamento,saída,Data do último desligamento da renovação automática,eventos_assinatura,datetime64[ns],19278,30.2,21.0
+motivo_pesquisa,saída,"Motivo declarado na pesquisa de saída, ajustado pelo comentário. Só 641 contas que cancelaram pelo site de jun a set/2026",pesquisa_saida,object,641,1.0,2.0
+dias_historico_treinos,uso,Dias da janela de 90 dias com dados de treino (os treinos começam em 01/01/2026). 0 = colunas de treino vazias,derivada,Int64,63929,100.0,100.0
+tipo_principal,uso,Modalidade mais frequente na janela (empate: mais minutos); 'sem treino' se não treinou,atividades,object,54470,85.2,100.0
+ambiente_principal,uso,"ar livre (corrida, caminhada, pedal), indoor (funcional, força, yoga) ou sem treino",derivada,object,54470,85.2,100.0
+n_tipos,uso,Número de modalidades praticadas na janela,atividades,Int64,54470,85.2,100.0
+peso_tipo_principal,uso,% dos treinos da janela que são da modalidade principal,atividades,float64,27807,43.5,94.9
+treinos_corrida,uso,Treinos de corrida na janela,atividades,Int64,54470,85.2,100.0
+treinos_funcional,uso,Treinos de funcional na janela,atividades,Int64,54470,85.2,100.0
+treinos_caminhada,uso,Treinos de caminhada na janela,atividades,Int64,54470,85.2,100.0
+treinos_forca,uso,Treinos de força na janela,atividades,Int64,54470,85.2,100.0
+treinos_yoga,uso,Treinos de yoga na janela,atividades,Int64,54470,85.2,100.0
+treinos_pedal,uso,Treinos de pedal na janela,atividades,Int64,54470,85.2,100.0
+relogio,uso,"nenhum, garmin ou apple_watch. Situação na exportação, sem data",usuarios,object,63929,100.0,100.0
+relogio_sincronizou_90d,uso,Teve treino vindo do relógio na janela,atividades,boolean,54470,85.2,100.0
+pct_treinos_relogio,uso,% dos treinos da janela que vieram do relógio (vazio se não treinou),atividades,float64,27807,43.5,94.9
+dias_historico_posts,uso,Dias da janela de 90 dias com dados de posts (os posts começam em 01/07/2025). 0 = colunas de posts vazias,derivada,Int64,63929,100.0,100.0
+posts_90d,uso,Posts no feed na janela,feed_posts,Int64,58828,92.0,100.0
+postou_objetivo_cumprido,uso,Postou na janela um texto de objetivo cumprido (palavras-chave; aproximado),feed_posts,boolean,58828,92.0,100.0
+postou_despedida,uso,Postou na janela um texto de despedida do app (palavras-chave; aproximado),feed_posts,boolean,58828,92.0,100.0
+n_seguidores,uso,Contas que seguem o usuário na data de referência,amizades,int64,63929,100.0,100.0
+n_seguindo,uso,Contas que o usuário segue na data de referência,amizades,int64,63929,100.0,100.0
+n_mutuas,uso,Relações em que os dois se seguem na data de referência,amizades,int64,63929,100.0,100.0
+treinos_acompanhados_90d,uso,Treinos feitos com outra conta na janela,atividades,Int64,54470,85.2,100.0
+nivel_engajamento,comportamento,"alto (treinou nos últimos 7 dias), médio (treinou no mês, não na última semana), baixo (30 a 44 dias sem treinar), possível churn (45+ dias). Vazio com menos de 45 dias de histórico",atividades,object,53076,83.0,100.0
+ultimo_treino,comportamento,Data do último treino até a referência (vazio se nenhum treino desde 01/01/2026),atividades,datetime64[ns],36164,56.6,98.8
+dias_sem_treinar,comportamento,Dias do último treino até a referência (vazio se nenhum treino no arquivo),atividades,Int64,36164,56.6,98.8
+sem_treino_ate_referencia,comportamento,Nenhum treino no arquivo até a data de referência,atividades,boolean,54470,85.2,100.0
+treinos_7d,comportamento,Treinos nos 7 dias até a referência,atividades,Int64,54315,85.0,100.0
+treinos_30d,comportamento,Treinos nos 30 dias até a referência,atividades,Int64,53561,83.8,100.0
+treinos_90d,comportamento,Treinos na janela de 90 dias (ou na parte dela com dados),atividades,Int64,54470,85.2,100.0
+treinos_por_semana,comportamento,treinos_90d ÷ semanas com dados (mínimo de 28 dias de histórico),derivada,float64,53630,83.9,100.0
+dias_ativos_90d,comportamento,Dias distintos com treino na janela,atividades,Int64,54470,85.2,100.0
+minutos_90d,comportamento,Minutos de treino na janela (duração 0 conta como ausente),atividades,Int64,54470,85.2,100.0
+tem_objetivo,comportamento,Respondeu o objetivo no onboarding com conteúdo,onboarding,bool,63929,100.0,100.0
+objetivo_texto,comportamento,Texto original do objetivo,onboarding,object,44694,69.9,69.9
+objetivo_categoria,comportamento,"Tema do objetivo por palavras-chave: saúde, peso e forma, companhia, bem-estar mental, performance, só o evento, outro (aproximado)",onboarding,object,44694,69.9,69.9
+objetivo_evento,comportamento,"O objetivo cita um evento com data: prova esportiva, evento pessoal ou sem evento (aproximado)",onboarding,object,44694,69.9,69.9
+objetivo_com_data,comportamento,Objetivo ligado a um evento com data,onboarding,boolean,44694,69.9,69.9
+nivel_declarado,comportamento,"iniciante, intermediario ou avancado, declarado no onboarding",onboarding,object,59416,92.9,93.0
+dias_por_semana_declarado,comportamento,Dias de treino por semana pretendidos no onboarding (1 a 7),onboarding,Int64,57561,90.0,89.9
+aderencia_meta,comportamento,treinos_por_semana ÷ dias_por_semana_declarado (1 = cumpre a meta),derivada,float64,48278,75.5,89.9
+n_cobrancas_aprovadas,pagamento,Cobranças aprovadas desde 07/2024,pagamentos,Int64,32583,51.0,100.0
+receita_liquida,pagamento,Receita líquida de taxas e devoluções desde 07/2024 (R$),pagamentos,float64,32583,51.0,100.0
+teve_recusa,pagamento,Teve cobrança recusada,pagamentos,boolean,32583,51.0,100.0
+teve_devolucao,pagamento,Teve chargeback ou estorno,pagamentos,boolean,32583,51.0,100.0
+n_chamados,suporte,Chamados de suporte abertos até a data de referência,tickets_suporte,int64,63929,100.0,100.0
+chamado_falha_gps,suporte,Abriu chamado sobre a falha de GPS até a referência,tickets_suporte,bool,63929,100.0,100.0
+atingida_falha_gps,suporte,Teve treino sem GPS (04/05 a 28/06/2026) ou chamado sobre o tema. Só Android,atividades + tickets_suporte,bool,63929,100.0,100.0
+grupo_campanha,campanha,"Grupo na campanha de 10/08/2026: controle, conteudo, desafio ou cupom (vazio se não sorteado)",campanha_ago26,object,14120,22.1,87.2
