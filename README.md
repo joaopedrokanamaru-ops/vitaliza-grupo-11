@@ -14,6 +14,7 @@ quatro partes, com tabelas e gráficos, e aponta para os notebooks onde cada con
 | Base única | Uma linha por usuário (63.929 contas, 119 colunas) | 39 a 43 |
 | Padrões de saída | Onde, quando e com que sinais os assinantes saem | 26 a 38 |
 | Segmentação | Cinco segmentos, com perfil, tamanho e saída histórica | 44 a 51 |
+| Mini deck | Gráficos dos slides técnicos (logaritmo, escolha do k, os quatro grupos) | 52 |
 
 ## Principais resultados
 
