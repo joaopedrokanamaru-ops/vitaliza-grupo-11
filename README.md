@@ -1,4 +1,6 @@
-# Vitaliza · grupo 12
+# Vitaliza · grupo 11
+
+**Integrantes:** João Pedro Capelli Kanamaru, Luca Tavares Gerin e Fernanda Tiemi Mori
 
 Projeto de análise de dados do case Vitaliza (MBA Inteli, Módulo 2): entender a saída de
 assinantes de um app de assinatura para quem treina. Data de corte: 30/09/2026.
@@ -14,7 +16,7 @@ os notebooks de origem.
 **Roteiro dos notebooks:** [`notebooks/00_artefato_tech.ipynb`](notebooks/00_artefato_tech.ipynb) resume
 a entrega em quatro partes e aponta para os notebooks onde cada conta está feita.
 
-**Mini deck:** [`saidas/mini_deck_vitaliza_grupo12.pdf`](saidas/mini_deck_vitaliza_grupo12.pdf).
+**Mini deck:** [`saidas/mini_deck_vitaliza_grupo11.pdf`](saidas/mini_deck_vitaliza_grupo11.pdf).
 
 | Parte | O que responde | Notebooks |
 |---|---|---|

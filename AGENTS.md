@@ -1,4 +1,4 @@
-# Projeto Vitaliza · grupo 12
+# Projeto Vitaliza · grupo 11
 
 ## O case
 A Vitaliza é um app de assinatura para quem treina. O grupo estuda a saída de assinantes:
