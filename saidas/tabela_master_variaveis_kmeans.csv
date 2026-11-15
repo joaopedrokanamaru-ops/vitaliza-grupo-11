@@ -1,0 +1,28 @@
+﻿variavel,entra_no_kmeans,tipo,motivo_se_fora,vazios_elegiveis,vazios_ativos
+idade_no_corte_z,False,padronizada (z-score),"897 ativos sem nascimento informado; idade não separou ativos, engajamento nem tipo de treino nas análises",851,897
+duracao_dias_log_z,True,padronizada (z-score),,0,0
+n_cobrancas_aprovadas_log_z,True,padronizada (z-score),,0,0
+receita_liquida_z,True,padronizada (z-score),,0,0
+treinos_7d_z,True,padronizada (z-score),,0,0
+treinos_30d_z,True,padronizada (z-score),,0,0
+treinos_90d_cap_z,True,padronizada (z-score),,0,0
+dias_ativos_90d_z,True,padronizada (z-score),,0,0
+minutos_90d_cap_z,True,padronizada (z-score),,0,0
+dias_sem_treinar_log_z,True,padronizada (z-score),,0,176
+n_tipos_z,True,padronizada (z-score),,0,0
+peso_tipo_principal_z,True,padronizada (z-score),,0,754
+treinos_corrida_log_z,True,padronizada (z-score),,0,0
+treinos_funcional_log_z,True,padronizada (z-score),,0,0
+treinos_caminhada_log_z,True,padronizada (z-score),,0,0
+treinos_forca_log_z,True,padronizada (z-score),,0,0
+treinos_yoga_log_z,True,padronizada (z-score),,0,0
+posts_90d_z,True,padronizada (z-score),,0,0
+n_seguidores_z,True,padronizada (z-score),,0,0
+n_seguindo_z,True,padronizada (z-score),,0,0
+n_mutuas_z,True,padronizada (z-score),,0,0
+dias_por_semana_declarado_z,False,padronizada (z-score),1.491 ativos não responderam a meta no onboarding; fica para descrever os grupos,1414,1491
+aderencia_meta_cap_z,False,padronizada (z-score),depende da meta declarada (1.491 ativos sem resposta) e repete a frequência de treino,1414,1491
+pedala_90d,True,indicador (0/1),,0,0
+treinou_acompanhado_90d,True,indicador (0/1),,0,0
+abriu_chamado,True,indicador (0/1),,0,0
+tem_relogio,True,indicador (0/1),,0,0
