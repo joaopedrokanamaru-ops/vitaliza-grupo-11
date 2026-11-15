@@ -79,3 +79,42 @@ n_chamados,suporte,Chamados de suporte abertos até a data de referência,ticket
 chamado_falha_gps,suporte,Abriu chamado sobre a falha de GPS até a referência,tickets_suporte,bool,63929,100.0,100.0
 atingida_falha_gps,suporte,Teve treino sem GPS (04/05 a 28/06/2026) ou chamado sobre o tema. Só Android,atividades + tickets_suporte,bool,63929,100.0,100.0
 grupo_campanha,campanha,"Grupo na campanha de 10/08/2026: controle, conteudo, desafio ou cupom (vazio se não sorteado)",campanha_ago26,object,14120,22.1,87.2
+minutos_90d_cap,tratada para k-means,"minutos_90d limitado em 4.250,96 (percentil 99 dos assinantes ativos no corte)",minutos_90d,float64,54470,85.2,100.0
+treinos_90d_cap,tratada para k-means,"treinos_90d limitado em 84,00 (percentil 99 dos assinantes ativos no corte)",treinos_90d,float64,54470,85.2,100.0
+aderencia_meta_cap,tratada para k-means,"aderencia_meta limitado em 1,86 (percentil 99 dos assinantes ativos no corte)",aderencia_meta,float64,48278,75.5,89.9
+dias_sem_treinar_log,tratada para k-means,"log(1 + dias_sem_treinar), para reduzir a cauda longa",dias_sem_treinar,float64,36164,56.6,98.8
+duracao_dias_log,tratada para k-means,"log(1 + duracao_dias), para reduzir a cauda longa",duracao_dias,float64,32583,51.0,100.0
+n_cobrancas_aprovadas_log,tratada para k-means,"log(1 + n_cobrancas_aprovadas), para reduzir a cauda longa",n_cobrancas_aprovadas,float64,32583,51.0,100.0
+treinos_corrida_log,tratada para k-means,"log(1 + treinos_corrida), para reduzir a cauda longa",treinos_corrida,float64,54470,85.2,100.0
+treinos_funcional_log,tratada para k-means,"log(1 + treinos_funcional), para reduzir a cauda longa",treinos_funcional,float64,54470,85.2,100.0
+treinos_caminhada_log,tratada para k-means,"log(1 + treinos_caminhada), para reduzir a cauda longa",treinos_caminhada,float64,54470,85.2,100.0
+treinos_forca_log,tratada para k-means,"log(1 + treinos_forca), para reduzir a cauda longa",treinos_forca,float64,54470,85.2,100.0
+treinos_yoga_log,tratada para k-means,"log(1 + treinos_yoga), para reduzir a cauda longa",treinos_yoga,float64,54470,85.2,100.0
+pedala_90d,tratada para k-means,"Fez algum treino de pedal na janela (substitui treinos_pedal, 91% de zeros entre ativos)",treinos_pedal,boolean,54470,85.2,100.0
+treinou_acompanhado_90d,tratada para k-means,"Fez algum treino acompanhado na janela (substitui treinos_acompanhados_90d, 93% de zeros)",treinos_acompanhados_90d,boolean,54470,85.2,100.0
+abriu_chamado,tratada para k-means,"Abriu algum chamado de suporte até a referência (substitui n_chamados, 86% de zeros)",n_chamados,bool,63929,100.0,100.0
+tem_relogio,tratada para k-means,"Tem relógio no cadastro (substitui pct_treinos_relogio, 62% de zeros). Situação na exportação",relogio,bool,63929,100.0,100.0
+idade_no_corte_z,padronizada para k-means,"idade_no_corte em z-score: (valor − 47,49) ÷ 11,08, média e desvio dos assinantes ativos no corte",idade_no_corte,float64,60095,94.0,93.9
+duracao_dias_log_z,padronizada para k-means,"duracao_dias_log em z-score: (valor − 5,42) ÷ 1,29, média e desvio dos assinantes ativos no corte",duracao_dias_log,float64,32583,51.0,100.0
+n_cobrancas_aprovadas_log_z,padronizada para k-means,"n_cobrancas_aprovadas_log em z-score: (valor − 1,39) ÷ 0,81, média e desvio dos assinantes ativos no corte",n_cobrancas_aprovadas_log,float64,32583,51.0,100.0
+receita_liquida_z,padronizada para k-means,"receita_liquida em z-score: (valor − 362,58) ÷ 215,87, média e desvio dos assinantes ativos no corte",receita_liquida,float64,32583,51.0,100.0
+treinos_7d_z,padronizada para k-means,"treinos_7d em z-score: (valor − 2,23) ÷ 2,24, média e desvio dos assinantes ativos no corte",treinos_7d,float64,54315,85.0,100.0
+treinos_30d_z,padronizada para k-means,"treinos_30d em z-score: (valor − 9,50) ÷ 7,58, média e desvio dos assinantes ativos no corte",treinos_30d,float64,53561,83.8,100.0
+treinos_90d_cap_z,padronizada para k-means,"treinos_90d_cap em z-score: (valor − 25,09) ÷ 18,56, média e desvio dos assinantes ativos no corte",treinos_90d_cap,float64,54470,85.2,100.0
+dias_ativos_90d_z,padronizada para k-means,"dias_ativos_90d em z-score: (valor − 20,20) ÷ 13,56, média e desvio dos assinantes ativos no corte",dias_ativos_90d,float64,54470,85.2,100.0
+minutos_90d_cap_z,padronizada para k-means,"minutos_90d_cap em z-score: (valor − 1.157,58) ÷ 902,55, média e desvio dos assinantes ativos no corte",minutos_90d_cap,float64,54470,85.2,100.0
+dias_sem_treinar_log_z,padronizada para k-means,"dias_sem_treinar_log em z-score: (valor − 1,44) ÷ 1,33, média e desvio dos assinantes ativos no corte",dias_sem_treinar_log,float64,36164,56.6,98.8
+n_tipos_z,padronizada para k-means,"n_tipos em z-score: (valor − 3,54) ÷ 1,37, média e desvio dos assinantes ativos no corte",n_tipos,float64,54470,85.2,100.0
+peso_tipo_principal_z,padronizada para k-means,"peso_tipo_principal em z-score: (valor − 62,38) ÷ 19,67, média e desvio dos assinantes ativos no corte",peso_tipo_principal,float64,27807,43.5,94.9
+treinos_corrida_log_z,padronizada para k-means,"treinos_corrida_log em z-score: (valor − 1,17) ÷ 1,35, média e desvio dos assinantes ativos no corte",treinos_corrida_log,float64,54470,85.2,100.0
+treinos_funcional_log_z,padronizada para k-means,"treinos_funcional_log em z-score: (valor − 1,39) ÷ 0,97, média e desvio dos assinantes ativos no corte",treinos_funcional_log,float64,54470,85.2,100.0
+treinos_caminhada_log_z,padronizada para k-means,"treinos_caminhada_log em z-score: (valor − 1,14) ÷ 0,96, média e desvio dos assinantes ativos no corte",treinos_caminhada_log,float64,54470,85.2,100.0
+treinos_forca_log_z,padronizada para k-means,"treinos_forca_log em z-score: (valor − 1,21) ÷ 0,91, média e desvio dos assinantes ativos no corte",treinos_forca_log,float64,54470,85.2,100.0
+treinos_yoga_log_z,padronizada para k-means,"treinos_yoga_log em z-score: (valor − 0,88) ÷ 0,79, média e desvio dos assinantes ativos no corte",treinos_yoga_log,float64,54470,85.2,100.0
+posts_90d_z,padronizada para k-means,"posts_90d em z-score: (valor − 1,50) ÷ 1,38, média e desvio dos assinantes ativos no corte",posts_90d,float64,58828,92.0,100.0
+n_seguidores_z,padronizada para k-means,"n_seguidores em z-score: (valor − 1,66) ÷ 1,51, média e desvio dos assinantes ativos no corte",n_seguidores,float64,63929,100.0,100.0
+n_seguindo_z,padronizada para k-means,"n_seguindo em z-score: (valor − 1,67) ÷ 1,50, média e desvio dos assinantes ativos no corte",n_seguindo,float64,63929,100.0,100.0
+n_mutuas_z,padronizada para k-means,"n_mutuas em z-score: (valor − 1,24) ÷ 1,26, média e desvio dos assinantes ativos no corte",n_mutuas,float64,63929,100.0,100.0
+dias_por_semana_declarado_z,padronizada para k-means,"dias_por_semana_declarado em z-score: (valor − 3,52) ÷ 1,48, média e desvio dos assinantes ativos no corte",dias_por_semana_declarado,float64,57561,90.0,89.9
+aderencia_meta_cap_z,padronizada para k-means,"aderencia_meta_cap em z-score: (valor − 0,58) ÷ 0,39, média e desvio dos assinantes ativos no corte",aderencia_meta_cap,float64,48278,75.5,89.9
+segmento_regra,segmentação,"elegível ao k-means (assinante ativo que treinou nos 90 dias até o corte), inativo em 90 dias (assinante ativo sem treino na janela; segmento definido por regra) ou fora do escopo (não é assinante ativo)",derivada,object,63929,100.0,100.0

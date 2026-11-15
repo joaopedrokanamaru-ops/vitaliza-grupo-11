@@ -1,0 +1,16 @@
+﻿,,coluna,nova,limite (p99 dos ativos),linhas limitadas,entre ativos,máximo antes,máximo depois,preenchidas,assimetria antes (ativos),assimetria depois (ativos),origem,sim,% sim (preenchidas),sim entre ativos,% sim (ativos)
+limite p99,0,minutos_90d,minutos_90d_cap,4250.959999999999,190.0,148.0,11559.0,4250.959999999999,54470,,,,,,,
+limite p99,1,treinos_90d,treinos_90d_cap,84.0,166.0,139.0,162.0,84.0,54470,,,,,,,
+limite p99,2,aderencia_meta,aderencia_meta_cap,1.8638999999999943,161.0,133.0,3.27,1.8638999999999943,48278,,,,,,,
+logaritmo,0,dias_sem_treinar,dias_sem_treinar_log,,,,272.0,5.6095,36164,4.408080894247672,0.9849985643261299,,,,,
+logaritmo,1,duracao_dias,duracao_dias_log,,,,2213.0,7.7026,32583,2.1328303465162537,-0.8992391109349598,,,,,
+logaritmo,2,n_cobrancas_aprovadas,n_cobrancas_aprovadas_log,,,,28.0,3.3673,32583,2.065487382670533,1.1008486914423254,,,,,
+logaritmo,3,treinos_corrida,treinos_corrida_log,,,,100.0,4.6151,54470,2.1369586408292407,0.6835174574894729,,,,,
+logaritmo,4,treinos_funcional,treinos_funcional_log,,,,63.0,4.1589,54470,1.9440752043137497,0.06510862540468831,,,,,
+logaritmo,5,treinos_caminhada,treinos_caminhada_log,,,,83.0,4.4308,54470,3.7456015947379777,0.4736932721783593,,,,,
+logaritmo,6,treinos_forca,treinos_forca_log,,,,51.0,3.9512,54470,1.9313389714104323,0.17296023759597293,,,,,
+logaritmo,7,treinos_yoga,treinos_yoga_log,,,,32.0,3.4965,54470,2.0627461887908827,0.4019342876214726,,,,,
+indicador,0,,pedala_90d,,,,,,54470,,,treinos_pedal,2739.0,5.028456030842666,1383.0,9.37436453602657
+indicador,1,,treinou_acompanhado_90d,,,,,,54470,,,treinos_acompanhados_90d,1715.0,3.1485221222691386,1080.0,7.320544973903613
+indicador,2,,abriu_chamado,,,,,,63929,,,n_chamados,3947.0,6.1740368220995165,2025.0,13.726021826069273
+indicador,3,,tem_relogio,,,,,,63929,,,relogio,24414.0,38.18924118944454,5635.0,38.195621229580425

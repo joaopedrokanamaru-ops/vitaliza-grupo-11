@@ -1,0 +1,7 @@
+﻿segmento,assinantes,pct_ativos,treinos_por_semana,dias_sem_treinar,meses_de_casa,pct_ar_livre,km_por_treino,pct_anual,pct_engaj_alto,pct_engaj_medio,pct_engaj_baixo,pct_possivel_churn,pct_renovacao_desligada,pct_influenciador,tipo_principal_mais_comum
+Ativos ao ar livre,5001,33.9,2.57,1.0,10.8,80.77,6.98,53.51,98.78,1.22,0.0,0.0,4.74,15.4,corrida
+Ativos em ambiente fechado,4030,27.32,2.41,1.0,10.5,14.53,5.19,50.05,94.96,5.04,0.0,0.0,4.44,14.96,funcional
+Recém-chegados,2092,14.18,0.93,2.0,0.9,70.0,5.85,37.62,91.87,8.13,0.0,0.0,3.44,26.58,corrida
+Esfriando,2876,19.49,0.62,18.0,9.95,76.33,5.89,78.13,0.0,67.18,12.69,20.13,52.23,15.65,corrida
+Inativos em 90 dias (regra),754,5.11,0.0,131.0,15.5,,,99.6,0.0,0.66,0.0,99.34,34.48,15.38,sem treino
+Total de ativos,14753,100.0,1.79,2.0,8.6,71.43,5.65,57.47,72.45,16.07,2.47,9.0,15.25,16.91,-
