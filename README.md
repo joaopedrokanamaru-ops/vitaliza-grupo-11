@@ -5,8 +5,16 @@ assinantes de um app de assinatura para quem treina. Data de corte: 30/09/2026.
 
 ## Por onde começar
 
-Abra [`notebooks/00_artefato_tech.ipynb`](notebooks/00_artefato_tech.ipynb). Ele resume a entrega em
-quatro partes, com tabelas e gráficos, e aponta para os notebooks onde cada conta está feita.
+**Análise exploratória (código e gráficos):**
+[`notebooks/analise_exploratoria.ipynb`](notebooks/analise_exploratoria.ipynb), também em
+[PDF](saidas/analise_exploratoria.pdf) e [HTML](saidas/analise_exploratoria.html). Um documento só, que
+limpa a base, mostra os padrões ligados à saída e monta a segmentação, conferindo cada resultado contra
+os notebooks de origem.
+
+**Roteiro dos notebooks:** [`notebooks/00_artefato_tech.ipynb`](notebooks/00_artefato_tech.ipynb) resume
+a entrega em quatro partes e aponta para os notebooks onde cada conta está feita.
+
+**Mini deck:** [`saidas/mini_deck_vitaliza_grupo12.pdf`](saidas/mini_deck_vitaliza_grupo12.pdf).
 
 | Parte | O que responde | Notebooks |
 |---|---|---|
