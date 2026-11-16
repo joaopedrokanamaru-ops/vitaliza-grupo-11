@@ -1,0 +1,41 @@
+﻿recorte,segmento,grupo,n,saiu_ou_desligou_%,p,bonferroni_15
+todos,Recém-chegados,controle,411,21.8978,,False
+todos,Recém-chegados,desafio,412,12.1359,0.0002,True
+todos,Recém-chegados,cupom,422,13.7441,0.0021,True
+todos,Recém-chegados,conteudo,438,17.1233,0.0789,False
+todos,Esfriando,controle,810,57.5309,,False
+todos,Esfriando,desafio,787,56.1626,0.581,False
+todos,Esfriando,cupom,742,59.434,0.4473,False
+todos,Esfriando,conteudo,726,58.5399,0.6891,False
+todos,Inativos em 90 dias (regra),controle,198,31.8182,,False
+todos,Inativos em 90 dias (regra),desafio,190,60.0,0.0,True
+todos,Inativos em 90 dias (regra),cupom,219,48.4018,0.0006,True
+todos,Inativos em 90 dias (regra),conteudo,191,54.9738,0.0,True
+todos,Ativos ao ar livre,controle,1197,15.2047,,False
+todos,Ativos ao ar livre,desafio,1158,10.6218,0.0009,True
+todos,Ativos ao ar livre,cupom,1187,11.4575,0.0071,False
+todos,Ativos ao ar livre,conteudo,1227,13.2844,0.1761,False
+todos,Ativos em ambiente fechado,controle,953,11.4376,,False
+todos,Ativos em ambiente fechado,desafio,958,9.3946,0.1437,False
+todos,Ativos em ambiente fechado,cupom,888,10.8108,0.6692,False
+todos,Ativos em ambiente fechado,conteudo,958,13.1524,0.2537,False
+renovação ligada,Recém-chegados,controle,394,18.5279,,False
+renovação ligada,Recém-chegados,desafio,391,8.1841,0.0,True
+renovação ligada,Recém-chegados,cupom,406,10.3448,0.001,True
+renovação ligada,Recém-chegados,conteudo,421,14.0143,0.0805,False
+renovação ligada,Esfriando,controle,378,15.3439,,False
+renovação ligada,Esfriando,desafio,397,18.3879,0.2584,False
+renovação ligada,Esfriando,cupom,335,17.6119,0.4144,False
+renovação ligada,Esfriando,conteudo,334,16.4671,0.6823,False
+renovação ligada,Inativos em 90 dias (regra),controle,143,6.993,,False
+renovação ligada,Inativos em 90 dias (regra),desafio,117,35.0427,0.0,True
+renovação ligada,Inativos em 90 dias (regra),cupom,164,31.7073,0.0,True
+renovação ligada,Inativos em 90 dias (regra),conteudo,133,36.0902,0.0,True
+renovação ligada,Ativos ao ar livre,controle,1136,10.9155,,False
+renovação ligada,Ativos ao ar livre,desafio,1100,6.2727,0.0001,True
+renovação ligada,Ativos ao ar livre,cupom,1125,7.0222,0.0012,True
+renovação ligada,Ativos ao ar livre,conteudo,1157,8.3838,0.04,False
+renovação ligada,Ativos em ambiente fechado,controle,922,8.6768,,False
+renovação ligada,Ativos em ambiente fechado,desafio,910,4.8352,0.0011,True
+renovação ligada,Ativos em ambiente fechado,cupom,854,7.377,0.3145,False
+renovação ligada,Ativos em ambiente fechado,conteudo,899,8.0089,0.6064,False

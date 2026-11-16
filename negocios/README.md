@@ -8,3 +8,5 @@ O relatório usa a segmentação oficial da entrega técnica (notebooks 44 a 51)
 - os cartões de persona;
 - a matriz Valor × Risco;
 - as limitações.
+
+Os 4 gráficos do relatório são gerados pelo `notebooks/53_graficos_relatorio_negocios.ipynb`, que roda depois do 51. A tabela da campanha por segmento, com p-valores e correção de Bonferroni, fica em `saidas/negocios_campanha_por_segmento.csv`.
